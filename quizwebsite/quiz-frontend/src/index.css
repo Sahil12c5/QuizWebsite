@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #050505;
+    --accent-primary: #B5FF5B; /* Neon Lime */
+    --accent-secondary: #EC4899; /* Pink */
+    --accent-tertiary: #6B46C1; /* Violet */
+    --text-main: #FFFFFF;
+    --text-dim: rgba(255, 255, 255, 0.4);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.06);
+  }
+
+  body {
+    @apply antialiased text-white selection:bg-[#B5FF5B] selection:text-black;
+    background-color: var(--bg-main);
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    @apply font-black uppercase tracking-tighter italic;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.06];
+  }
+  
+  .neon-glow {
+    box-shadow: 0 0 20px rgba(181, 255, 91, 0.2);
+  }
+
+  .cyber-grid {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}

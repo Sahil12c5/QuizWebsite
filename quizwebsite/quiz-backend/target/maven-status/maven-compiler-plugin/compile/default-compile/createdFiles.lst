@@ -1,0 +1,12 @@
+com\quiz\controller\AuthServlet.class
+com\quiz\model\UserScore.class
+com\quiz\dao\UserDAO.class
+com\quiz\controller\ProfileServlet.class
+com\quiz\dao\UserScoreDAO.class
+com\quiz\model\Quiz.class
+com\quiz\model\User.class
+com\quiz\config\DatabaseConfig.class
+com\quiz\controller\QuizServlet.class
+com\quiz\model\Question.class
+com\quiz\dao\QuestionDAO.class
+com\quiz\dao\QuizDAO.class
